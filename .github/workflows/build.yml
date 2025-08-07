@@ -14,7 +14,7 @@ jobs:
         platform: ["arm64"]
     runs-on: ${{ matrix.platform == 'x86_64' && 'ubuntu-24.04' || 'ARM64' && 'ubuntu-24.04-arm' }}
     container:
-      image: registry.fedoraproject.org/fedora-minimal:41
+      image: registry.fedoraproject.org/fedora-minimal:42
 
     steps:
       - name: Install dependencies
