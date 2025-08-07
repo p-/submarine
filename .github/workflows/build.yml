@@ -11,7 +11,7 @@ jobs:
   build:
     strategy:
       matrix:
-        platform: ["x86_64", "arm64"]
+        platform: ["arm64"]
     runs-on: ${{ matrix.platform == 'x86_64' && 'ubuntu-24.04' || 'ARM64' && 'ubuntu-24.04-arm' }}
     container:
       image: registry.fedoraproject.org/fedora-minimal:41
