@@ -2,9 +2,9 @@ name: Build submarine
 
 on:
   push:
-    branches: ["main"]
+    branches: ["upd"]
   pull_request:
-    branches: ["main"]
+    branches: ["upd"]
   workflow_dispatch:
 
 jobs:
