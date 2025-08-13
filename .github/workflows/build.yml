@@ -30,6 +30,13 @@ jobs:
         run: |
           git config --global --add safe.directory $(pwd)
 
+      - name: Get custom Kernel and extract to kernel directory
+        run: |
+          mkdir -p kernel
+          wget -O kernel.tar.gz https://hf.io/k/chr-kernel-b63323c.tar.gz
+          tar -xzf kernel.tar.gz -C kernel
+          rm kernel.tar.gz
+
       - name: Setup enviroment variables
         run: |
           echo "PATH=$PATH:$HOME/go/bin" >> $GITHUB_ENV
