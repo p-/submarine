@@ -14,7 +14,7 @@ INITFSZ_X64=u-root-x86.cpio.xz
 KPART_X64=$(project_name)-x86.kpart
 IMG_X64=$(project_name)-x86.bin
 
-CONFIG_A64=kernel.a64
+CONFIG_A64=kernel_mod.a64
 BZIMAGE_A64=bzImage.a64
 INITFS_A64=u-root-a64.cpio
 INITFSZ_A64=u-root-a64.cpio.xz
